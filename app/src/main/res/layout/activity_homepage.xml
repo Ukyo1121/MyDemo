@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomepageActivity">
+
+    <!-- 上四分之一蓝色背景 -->
+
+    <View
+        android:id="@+id/top_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shape_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <TextView
+        android:id="@+id/signature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎来到信息App"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <Button
+        android:id="@+id/information"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_homepage_func"
+        android:backgroundTint="@null"
+        android:text="个人信息"
+        android:textSize="18sp"
+        android:textColor="#606060"
+        android:gravity="start|center_vertical"
+        android:paddingStart="70dp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/information"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@id/information"
+        app:layout_constraintTop_toTopOf="@id/information"
+        app:layout_constraintBottom_toBottomOf="@id/information" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="@id/information"
+        app:layout_constraintTop_toTopOf="@id/information"
+        app:layout_constraintBottom_toBottomOf="@id/information" />
+
+    <Button
+        android:id="@+id/collect"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_homepage_func"
+        android:backgroundTint="@null"
+        android:text="我的收藏"
+        android:textSize="18sp"
+        android:textColor="#606060"
+        android:gravity="start|center_vertical"
+        android:paddingStart="70dp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/information" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/collect"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@id/collect"
+        app:layout_constraintTop_toTopOf="@id/collect"
+        app:layout_constraintBottom_toBottomOf="@id/collect" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="@id/collect"
+        app:layout_constraintTop_toTopOf="@id/collect"
+        app:layout_constraintBottom_toBottomOf="@id/collect" />
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_homepage_func"
+        android:backgroundTint="@null"
+        android:text="浏览历史"
+        android:textSize="18sp"
+        android:textColor="#606060"
+        android:gravity="start|center_vertical"
+        android:paddingStart="70dp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/collect" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/history"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@id/history"
+        app:layout_constraintTop_toTopOf="@id/history"
+        app:layout_constraintBottom_toBottomOf="@id/history" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="@id/history"
+        app:layout_constraintTop_toTopOf="@id/history"
+        app:layout_constraintBottom_toBottomOf="@id/history" />
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_homepage_func"
+        android:backgroundTint="@null"
+        android:text="设置"
+        android:textSize="18sp"
+        android:textColor="#606060"
+        android:gravity="start|center_vertical"
+        android:paddingStart="70dp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/history" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/settings"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@id/settings"
+        app:layout_constraintTop_toTopOf="@id/settings"
+        app:layout_constraintBottom_toBottomOf="@id/settings" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="@id/settings"
+        app:layout_constraintTop_toTopOf="@id/settings"
+        app:layout_constraintBottom_toBottomOf="@id/settings" />
+
+    <Button
+        android:id="@+id/about_us"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_homepage_func"
+        android:backgroundTint="@null"
+        android:text="关于我们"
+        android:textSize="18sp"
+        android:textColor="#606060"
+        android:gravity="start|center_vertical"
+        android:paddingStart="70dp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/aboutus"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@id/about_us"
+        app:layout_constraintTop_toTopOf="@id/about_us"
+        app:layout_constraintBottom_toBottomOf="@id/about_us" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="@id/about_us"
+        app:layout_constraintTop_toTopOf="@id/about_us"
+        app:layout_constraintBottom_toBottomOf="@id/about_us" />
+
+    <Button
+        android:id="@+id/feedback"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_homepage_func"
+        android:backgroundTint="@null"
+        android:text="意见反馈"
+        android:textSize="18sp"
+        android:textColor="#606060"
+        android:gravity="start|center_vertical"
+        android:paddingStart="70dp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about_us" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/feedback"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@id/feedback"
+        app:layout_constraintTop_toTopOf="@id/feedback"
+        app:layout_constraintBottom_toBottomOf="@id/feedback" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="@id/feedback"
+        app:layout_constraintTop_toTopOf="@id/feedback"
+        app:layout_constraintBottom_toBottomOf="@id/feedback" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
